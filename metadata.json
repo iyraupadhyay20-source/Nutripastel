@@ -1,0 +1,7 @@
+{
+  "name": "NutriPastel - Food & Nutrition Tracker",
+  "description": "A cute, colorful pastel nutrition tracker created by Iyra Upadhyay to calculate calories, protein, fat, and calcium by food weight.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
