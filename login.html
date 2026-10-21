@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff5fa">
+  <title>NutriPastel | Welcome Back</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#f4a8c1;--lavender:#d8c8ee;--mint:#e7f1e5;--ink:#777a9d;--muted:#a6a3bd;--white:#fffefe}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 8% 10%,#fbe0ee 0,transparent 26%),radial-gradient(circle at 95% 90%,#e8def9 0,transparent 30%),#fff9f7;color:var(--ink);font-family:"DM Sans",sans-serif}
+    button,input{font:inherit}.shell{width:min(1050px,100%);min-height:650px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;border:1px solid #f7e8f0;border-radius:30px;background:var(--white);box-shadow:0 24px 70px #dfc5d733}
+    .art{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;padding:54px 34px 28px;background:linear-gradient(145deg,#fff0f6,#fff9f2 55%,#f3edff)}
+    .flower{font-size:38px;color:#ed9fbe}.logo{font:700 clamp(2.5rem,5vw,3.7rem)/1.1 Quicksand,sans-serif;letter-spacing:-2px;color:#a2bba5;margin-top:8px}.logo span{color:#f0a4c1}.tag{font-size:12px;letter-spacing:2px;color:#aaa2bb;margin-top:12px}.tag b{color:#eaa5c3;padding:0 8px}
+    .message{font:600 20px/1.6 Quicksand,sans-serif;color:#8d8ca8;margin-top:46px}.message p{margin:0}.heart{color:#f0a4c1;font-size:30px}
+    .illustration{position:relative;width:300px;height:210px;margin-top:24px}.halo{position:absolute;width:260px;height:150px;left:20px;bottom:10px;border-radius:50%;background:#fff0f5}.bowl{position:absolute;left:65px;bottom:30px;width:170px;height:100px;border:7px solid #fffaff;border-radius:18px 18px 90px 90px;background:linear-gradient(#fce2ef,#efc7e8);box-shadow:0 10px 0 #ead8f2}.bowl:before{content:"";position:absolute;left:-7px;top:-15px;width:170px;height:34px;border-radius:50%;border:5px solid #f4d9eb;background:#fffaff}.food{position:absolute;top:-10px;left:8px;z-index:2;font-size:28px;white-space:nowrap}.berry{position:absolute;z-index:3;font-size:35px}.berry.one{left:22px;bottom:23px}.berry.two{right:17px;bottom:15px}.note{position:absolute;right:0;bottom:20px;padding:19px 10px;background:#fffaff;border:2px solid #f4c8df;border-radius:9px;transform:rotate(8deg);font:700 13px/1.5 Quicksand,sans-serif;color:#a69ab6;box-shadow:4px 5px 0 #f6e2f0}.note span{display:block;color:#f0a4c1;font-size:22px}.footer{margin:auto 0 0;color:#aaa2bb;font-size:11px}
+    .form-side{display:grid;place-items:center;padding:44px}.card{width:min(100%,390px)}.icon{width:48px;height:48px;display:grid;place-items:center;margin:0 auto 14px;border-radius:17px;background:linear-gradient(135deg,#fff0f7,#f2eaff);color:#f0a4c1;font-size:28px}.eyebrow{text-align:center;font-size:10px;font-weight:700;letter-spacing:1.5px;color:#a3b9a8;margin:0 0 8px}h1{text-align:center;font:700 34px/1.2 Quicksand,sans-serif;letter-spacing:-1px;margin:0;color:#8283a5}.intro{text-align:center;color:var(--muted);font-size:13px;line-height:1.7;margin:12px 0 27px}.field{margin:0 0 17px}.field label{display:block;margin-bottom:8px;font-size:12px;font-weight:700;color:#8d8ba8}.input-wrap{height:52px;display:flex;align-items:center;gap:10px;padding:0 14px;border:1px solid #eedcf0;border-radius:15px;background:#fffaff}.input-wrap:focus-within{border-color:var(--pink);box-shadow:0 0 0 4px #f4a8c126}.input-wrap .symbol{color:#c0afcc}.input-wrap input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#777a9d;font-size:13px}.input-wrap input::placeholder{color:#c2bbce}.show{border:0;background:transparent;color:#a18bb7;font-size:11px;font-weight:700}.options{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:2px 0 22px;font-size:11px;color:#9693ae}.remember{display:flex;align-items:center;gap:7px}.remember input{accent-color:#eaa9c8}.link{border:0;padding:0;background:transparent;color:#aa8cb9;text-decoration:underline;text-underline-offset:3px;font-size:inherit;font-weight:700;cursor:pointer}.submit{width:100%;height:52px;border:0;border-radius:15px;background:linear-gradient(100deg,#f2abc5,#d8b9eb);color:white;font-weight:700;box-shadow:0 8px 18px #e8aecf40;cursor:pointer;transition:transform .2s}.submit:hover{transform:translateY(-2px)}.status{min-height:18px;text-align:center;font-size:11px;color:#829b91;margin:10px 0 0}.status.error{color:#cc7897}.or{display:flex;align-items:center;gap:12px;margin:18px 0;color:#b6abc1;font-size:10px}.or:before,.or:after{content:"";height:1px;flex:1;background:#f0e6f1}.google{width:100%;height:49px;border:1px solid #e8c9ef;border-radius:14px;background:#fffaff;color:#8e8ba6;font-size:12px;font-weight:700;cursor:pointer}.google b{color:#8ba8e8;font-size:17px;margin-right:9px}.switch{text-align:center;color:#aaa2bb;font-size:12px;margin:22px 0 0}.switch .link{margin-left:5px}.smallprint{text-align:center;color:#c0b5c8;font-size:10px;margin:24px 0 0}.smallprint span{color:#f0a4c1}.error-text{font-size:11px;color:#cc7897;min-height:0;margin-top:4px}.error-text:not(:empty){min-height:14px}
+    @media(max-width:700px){body{display:block;padding:0}.shell{min-height:100vh;display:flex;flex-direction:column;border-radius:0;border:0}.art{padding:27px 20px 18px;min-height:260px}.flower{font-size:28px}.logo{font-size:2.8rem}.tag{margin-top:8px;font-size:10px}.message{font-size:15px;line-height:1.45;margin-top:20px}.heart{font-size:22px}.illustration{display:none}.footer{margin-top:20px}.form-side{padding:32px 24px 38px}.card{max-width:420px}h1{font-size:30px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="art">
+      <div class="flower" aria-hidden="true">✿</div>
+      <div class="logo">Nutri<span>Pastel</span></div>
+      <div class="tag">HEALTHY CHOICES <b>•</b> HAPPIER YOU</div>
+      <div class="message"><p>Personalised diet plans,</p><p>for a healthier, happier you.</p><div class="heart">♡</div></div>
+      <div class="illustration" aria-hidden="true"><div class="halo"></div><div class="bowl"><div class="food">🥬 🥑 🍓 🥕</div></div><div class="berry one">🍓</div><div class="berry two">🫐</div><div class="note">Good Food<br>Good Mood<span>♡</span></div></div>
+      <p class="footer">Small steps. Feel-good habits. You. <span style="color:#f0a4c1">✦</span></p>
+    </section>
+    <section class="form-side">
+      <div class="card">
+        <div class="icon" aria-hidden="true">♡</div>
+        <p class="eyebrow">YOUR HEALTHY JOURNEY STARTS HERE</p>
+        <h1 id="title">Welcome Back!</h1>
+        <p class="intro" id="intro">Log in to your NutriPastel account<br>to continue your health journey.</p>
+        <form id="form" novalidate>
+          <div class="field"><label for="email">Email address</label><div class="input-wrap"><span class="symbol">✉</span><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></div><div class="error-text" id="email-error"></div></div>
+          <div class="field"><label for="password">Password</label><div class="input-wrap"><span class="symbol">♡</span><input id="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" class="show" id="toggle">Show</button></div><div class="error-text" id="password-error"></div></div>
+          <div class="options" id="options"><label class="remember"><input type="checkbox" id="remember"> Remember me</label><button type="button" class="link" id="forgot">Forgot password?</button></div>
+          <button class="submit" id="submit" type="submit">Log In　→</button><p class="status" id="status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="or">OR</div>
+        <button type="button" class="google" id="google"><b>G</b> Continue with Google</button>
+        <p class="switch"><span id="switch-text">Don’t have an account?</span><button class="link" id="switch" type="button">Sign Up</button></p>
+        <p class="smallprint">Made with care for your feel-good days <span>♡</span></p>
+      </div>
+    </section>
+  </main>
+  <script>
+    const form=document.getElementById('form'),email=document.getElementById('email'),password=document.getElementById('password'),status=document.getElementById('status');
+    const title=document.getElementById('title'),intro=document.getElementById('intro'),submit=document.getElementById('submit'),switchBtn=document.getElementById('switch'),switchText=document.getElementById('switch-text'),options=document.getElementById('options');
+    let signup=false;
+    function message(text,error=false){status.textContent=text;status.classList.toggle('error',error)}
+    function clearErrors(){document.getElementById('email-error').textContent='';document.getElementById('password-error').textContent=''}
+    document.getElementById('toggle').addEventListener('click',()=>{const visible=password.type==='text';password.type=visible?'password':'text';document.getElementById('toggle').textContent=visible?'Show':'Hide'});
+    switchBtn.addEventListener('click',()=>{signup=!signup;clearErrors();message('');title.textContent=signup?'Create Your Account':'Welcome Back!';intro.innerHTML=signup?'Let’s make healthy habits feel good<br>and easy, one step at a time.':'Log in to your NutriPastel account<br>to continue your health journey.';submit.textContent=signup?'Create Account　→':'Log In　→';switchText.textContent=signup?'Already have an account?':'Don’t have an account?';switchBtn.textContent=signup?'Log In':'Sign Up';options.hidden=signup;password.autocomplete=signup?'new-password':'current-password'});
+    form.addEventListener('submit',event=>{event.preventDefault();clearErrors();message('');let valid=true;if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){document.getElementById('email-error').textContent='Please enter a valid email address.';valid=false}if(password.value.length<6){document.getElementById('password-error').textContent='Use at least 6 characters for your password.';valid=false}if(!valid)return;message(signup?'Form looks good! Connect authentication to create your account.':'Form looks good! Connect authentication to log in.')});
+    document.getElementById('forgot').addEventListener('click',()=>{message(email.value.trim()?'Password reset needs to be connected to authentication.':'Enter your email address above first.',!email.value.trim());if(!email.value.trim())email.focus()});
+    document.getElementById('google').addEventListener('click',()=>message('Google sign-in is not connected yet.',true));
+  </script>
+</body>
+</html>
